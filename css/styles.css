@@ -262,27 +262,39 @@ border-radius: 2px;
 
 /*----------- HERO----------- */
 .hero {
-padding: 188px 0;
-    background-color: #2e2f42;
+/* padding: 188px 0; */
+    padding: 72px 0;
     margin: 0 auto;
+    background-color: #2e2f42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bgr.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        max-width: 1440px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* max-width: 1440px; */
+    max-width: 320px;
+    min-height: 432px;
+    display: flex;
+    align-items: center;
+    
 }
 
 .hero-title {
 font-weight: 700;
-    font-size: 56px;
-    line-height: 107%;
+    /* font-size: 56px; */
+    /* line-height: 107%; */
     letter-spacing: 0.02em;
     color: #fff;
-    max-width: 496px;
-    margin: 0 auto;
+    /* max-width: 496px; */
+    /* margin: 0 auto; */
     text-align: center;
-    margin-bottom: 48px;
+    /* margin-bottom: 48px; */
+        font-size: 36px;
+        line-height: 111%;
+        max-width: 216px;
+        margin: 0 auto;
+        margin-bottom: 72px;
 }
+
 .button {
     font-weight: 500;
         font-size: 16px;
@@ -302,6 +314,7 @@ font-weight: 700;
         height: 56px;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .button:hover, .button:focus, .subscribe-btn:hover, .subscribe-btn:focus {
     background-color: #404BBF;
     cursor: pointer;
@@ -716,14 +729,13 @@ font-size: 12px;
     /* gap: 24px; */
 }
 
-.footer-form-label {
-
-}
 
 .send-icon {
     fill: #fff;
     margin-left: 16px;
 }
+
+/* modal */
 
 .backdrop {
     width: 100%;
@@ -744,8 +756,8 @@ font-size: 12px;
 }
 
 .modal {
-    width: 408px;
-    min-height: 584px;
+    width: 288px;
+    min-height: 623px;
     background-color: #fcfcfc;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -753,7 +765,7 @@ font-size: 12px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 72px 24px 24px 24px;
+    padding: 72px 16px 24px 16px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
@@ -799,7 +811,6 @@ font-weight: 500;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    /* margin-top: 48px;  */
     margin-bottom: 16px;
 }
 
@@ -807,19 +818,18 @@ font-weight: 500;
 margin-bottom: 8px;
 }
 
-.modal-input-item {
-margin-bottom: 8px;
-position: relative;
-}
-
 .input-label {
-font-weight: 400;
+    font-weight: 400;
     font-size: 12px;
     line-height: 117%;
     letter-spacing: 0.04em;
     color: #8e8f99;
     margin-bottom: 4px;
     display: block;
+}
+
+.modal-input-wrap {
+    position: relative;
 }
 
 .modal-input {
@@ -836,6 +846,20 @@ font-weight: 400;
     letter-spacing: 0.04em;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     outline: transparent;
+}
+
+.modal-input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    opacity: 0.5;
+}
+
+.modal-input-item {
+margin-bottom: 8px;
+position: relative;
 }
 
 .modal-input:hover, .modal-input:focus, .modal-input:focus-within, .modal-comment:focus, .modal-comment:hover {
@@ -855,10 +879,6 @@ font-weight: 400;
     top: 50%;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-input-wrap {
-    position: relative;
 }
 
 .modal-textarea-wrap {
@@ -891,12 +911,10 @@ margin-bottom: 24px;
     font-size: 12px;
     line-height: 117%;
     letter-spacing: 0.04em;
-    color: #8e8f99;
-    /* display: flex;
-    align-items: center; */
-    /* gap: 8px; */
-
-    
+    color: #8e8f99;  
+    display: flex;
+    justify-content: center;
+    align-items: center;  
 }
 
 .check-span {
@@ -910,6 +928,7 @@ margin-bottom: 24px;
     fill: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-right: 8px;
+    flex-shrink: 0;
 }
 
 .modal-check:checked + .modal-check-text .check-span {
@@ -920,6 +939,7 @@ margin-bottom: 24px;
 
 .privacy-link {
 color: #4d5ae5;
+text-decoration: underline;
 }
 
 .submit-btn {
@@ -938,11 +958,16 @@ color: #4d5ae5;
     letter-spacing: 0.04em;
     text-align: center;
     color: #fff;
-    margin-left: 97px;
+    /* margin-left: 97px; */
     border: none;
     display: block;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 0 auto;
+}
+
+.submit-btn:hover, .submit-btn:focus {
+    background-color: #404bbf;
 }
 
 @media screen and (min-width: 768px) {
@@ -1019,6 +1044,7 @@ color: #4d5ae5;
         gap: 72px 24px;
         padding-right: 108px;
         padding-left: 108px;
+        align-items: baseline;
         
     }
 
@@ -1056,10 +1082,22 @@ color: #4d5ae5;
         align-items: baseline;
     }
 
-    
+    .footer-input {
+        width: 264px;
+        margin-bottom: 0;
+    }
 
+/* modal */
 
+.modal {
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
+}
 
+.modal-check-text {
+    justify-content: flex-start;
+}
 }
 
 @media screen and (min-width: 1158px) {
