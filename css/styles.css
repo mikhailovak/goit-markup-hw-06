@@ -262,26 +262,30 @@ border-radius: 2px;
 
 /*----------- HERO----------- */
 .hero {
-/* padding: 188px 0; */
     padding: 72px 0;
     margin: 0 auto;
     background-color: #2e2f42;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bgr.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/mob-bg-1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* max-width: 1440px; */
     max-width: 320px;
     min-height: 432px;
     display: flex;
     align-items: center;
-    
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 2dppx),
+(min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero/mob-bg-2x.jpg);
+    }
 }
 
 .hero-title {
 font-weight: 700;
-    /* font-size: 56px; */
-    /* line-height: 107%; */
     letter-spacing: 0.02em;
     color: #fff;
     /* max-width: 496px; */
@@ -1005,6 +1009,31 @@ text-decoration: underline;
             flex-direction: column;
         }
     
+        /* hero */
+    
+    .hero {
+            padding: 112px 0;
+            max-width: 768px;
+            min-height: 436px;
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/tab-bg-1x.jpg);
+        }
+    
+        @media screen and (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx),
+        (min-resolution: 192dpi) {
+            .hero {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                    url(../images/hero/tab-bg-2x.jpg);
+            }
+        }
+
+        .hero-title {
+                font-size: 56px;
+                line-height: 107%;
+                max-width: 496px;
+                margin-bottom: 36px;
+        }
+
     /* values */
 
     .values-item {
@@ -1013,6 +1042,10 @@ text-decoration: underline;
 
     .values-list {
         gap: 72px 24px;
+    }
+
+    .values-title {
+        text-align: left;
     }
 
     /* team */
@@ -1125,6 +1158,32 @@ text-decoration: underline;
             letter-spacing: 0.02em;
             padding: 24px 0;
         }
+
+        /* hero */
+
+    .hero {
+        padding: 188px 0;
+        max-width: 1440px;
+        min-height: 600px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/web-bg-1x.jpg);
+    }
+        
+    @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/hero/web-bg-2x.jpg);
+        }
+    }
+    
+    .hero-title {
+    margin-bottom: 48px;
+    }
+        
+        
+        
+    /* values */
 
     .values-icons-cont {
         display: flex;

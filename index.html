@@ -177,7 +177,9 @@
         <h2 class="team-title">Our Team</h2>
 <ul class="team-members">
     <li class="team-item">
-        <img src="./images/team/Mark.jpg" alt="Mark Guerrero" width="264">
+        <img 
+        srcset="./images/team/Mark.jpg 1x, ./images/team/mark-2x.jpg 2x"
+        src="./images/team/Mark.jpg" alt="Mark Guerrero" width="264">
         <div class="team-member-info">
             <h3 class="team-member-name">Mark Guerrero</h3>
             <p class="team-member-position">Product Designer</p>
@@ -214,7 +216,9 @@
         </div>
     </li>
     <li class="team-item">
-        <img src="./images/team/Tom.jpg" alt="Tom Ford" width="264">
+        <img 
+        srcset="./images/team/Tom.jpg 1x, ./images/team/tom-2x.jpg 2x"
+        src="./images/team/Tom.jpg" alt="Tom Ford" width="264">
         <div class="team-member-info">
             <h3 class="team-member-name">Tom Ford</h3>
             <p class="team-member-position">Frontend Developer</p>
@@ -251,7 +255,9 @@
         </div>
     </li>
     <li class="team-item">
-        <img src="./images/team/Camilla.jpg" alt="Camila Garcia" width="264">
+        <img 
+        srcset="./images/team/Camilla.jpg 1x, ./images/team/camilla-2x.jpg 2x"
+        src="./images/team/Camilla.jpg" alt="Camila Garcia" width="264">
         <div class="team-member-info">
             <h3 class="team-member-name">Camila Garcia</h3>
             <p class="team-member-position">Marketing</p>
@@ -288,7 +294,9 @@
         </div>
     </li>
     <li class="team-item">
-        <img src="./images/team/Daniel.jpg" alt="Daniel Wilson" width="264">
+        <img 
+        srcset="./images/team/Daniel.jpg 1x, ./images/team/daniel-2x.jpg 2x"
+        src="./images/team/Daniel.jpg" alt="Daniel Wilson" width="264">
         <div class="team-member-info">
             <h3 class="team-member-name">Daniel Wilson</h3>
             <p class="team-member-position">UI Designer</p>
@@ -334,7 +342,15 @@
         <ul class="portfolio-list">
             <li class="portfolio-item">
                 <div class="portfolio-box">
-                    <img src="./images/portfolio/1.jpg" alt="Banking App Icons" width="360">
+                    <picture>
+                        <source 
+                        srcset="./images/portfolio/1.jpg 1x, ./images/portfolio/web-portfolio-1-2x.jpg 2x" 
+                        media="(min-width:1158px)">
+                        <source srcset="./images/portfolio/portfolio-1-tab-1x.jpg 1x, ./images/portfolio/portfolio-1-tab-2x.jpg 2x" media="(min-width:768px)">
+                        <source srcset="./images/portfolio/mob-portfolio-1-1x.jpg 1x, ./images/portfolio/mob-portfolio-1-2x.jpg 2x" media="(min-width:320px)">
+                        <img src="./images/portfolio/1.jpg" alt="Banking App Icons" width="360">
+                    </picture>
+                    
                     <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                         Tracker App · Exotic
                         Fruit Ecommerce App ·
@@ -347,7 +363,16 @@
             </li>
             <li class="portfolio-item">
                 <div class="portfolio-box">
-                    <img src="./images/portfolio/2.jpg" alt="Phone Pying via pay-pass" width="360">
+                    <picture>
+                        <source srcset="./images/portfolio/2.jpg 1x, ./images/portfolio/web-portfolio-2-2x.jpg 2x"
+                            media="(min-width:1158px)">
+                        <source srcset="./images/portfolio/portfolio-2-tab-1x.jpg 1x, ./images/portfolio/portfolio-2-tab-2x.jpg 2x"
+                            media="(min-width:768px)">
+                        <source srcset="./images/portfolio/mob-portfolio-2-1x.jpg 1x, ./images/portfolio/mob-portfolio-2-2x.jpg 2x"
+                            media="(min-width:320px)">
+                        <img src="./images/portfolio/2.jpg" alt="Phone Pying via pay-pass" width="360">
+                    </picture>
+                    
                     <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                         Tracker App ·
                         Exotic
@@ -361,7 +386,16 @@
             </li>
             <li class="portfolio-item">
                 <div class="portfolio-box">
-                    <img src="./images/portfolio/3.jpg" alt="Phone and laptop with Meditation App on the screens" width="360">
+                    <picture>
+                        <source srcset="./images/portfolio/3.jpg 1x, ./images/portfolio/web-portfolio-3-2x.jpg 2x"
+                            media="(min-width:1158px)">
+                        <source srcset="./images/portfolio/portfolio-3-tab-1x.jpg 1x, ./images/portfolio/portfolio-3-tab-2x.jpg 2x"
+                            media="(min-width:768px)">
+                        <source srcset="./images/portfolio/mob-portfolio-3-1x.jpg 1x, ./images/portfolio/mob-portfolio-3-2x.jpg 2x"
+                            media="(min-width:320px)">
+                        <img src="./images/portfolio/3.jpg" alt="Phone and laptop with Meditation App on the screens" width="360">
+                    </picture>
+                    
                     <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                         Tracker App ·
                         Exotic
@@ -375,7 +409,16 @@
             </li>
             <li class="portfolio-item">
                 <div class="portfolio-box">
+                    <picture>
+                        <source srcset="./images/portfolio/4.jpg 1x, ./images/portfolio/web-portfolio-4-2x.jpg 2x"
+                            media="(min-width:1158px)">
+                        <source srcset="./images/portfolio/portfolio-4-tab-1x.jpg 1x, ./images/portfolio/portfolio-4-tab-2x.jpg 2x"
+                            media="(min-width:768px)">
+                        <source srcset="./images/portfolio/mob-portfolio-4-1x.jpg 1x, ./images/portfolio/mob-portfolio-4-2x.jpg 2x"
+                            media="(min-width:320px)">
                     <img src="./images/portfolio/4.jpg" alt="A person driving a car using an app" width="360">
+                    </picture>
+                    
                     <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                         Tracker App ·
                         Exotic
@@ -390,7 +433,16 @@
             </li>
             <li class="portfolio-item">
                 <div class="portfolio-box">
-                    <img src="./images/portfolio/5.jpg" alt="Four screen themes examples" width="360">
+                    <picture>
+                        <source srcset="./images/portfolio/5.jpg 1x, ./images/portfolio/web-portfolio-5-2x.jpg 2x"
+                            media="(min-width:1158px)">
+                        <source srcset="./images/portfolio/portfolio-5-tab-1x.jpg 1x, ./images/portfolio/portfolio-5-tab-2x.jpg 2x"
+                            media="(min-width:768px)">
+                        <source srcset="./images/portfolio/mob-portfolio-5-1x.jpg 1x, ./images/portfolio/mob-portfolio-5-2x.jpg 2x"
+                            media="(min-width:320px)">
+                        <img src="./images/portfolio/5.jpg" alt="Four screen themes examples" width="360">
+                    </picture>
+                    
                     <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                         Tracker App ·
                         Exotic
@@ -405,7 +457,16 @@
             </li>
             <li class="portfolio-item">
                 <div class="portfolio-box">
-                    <img src="./images/portfolio/6.jpg" alt="A girl chatting via phone camera" width="360">
+                    <picture>
+                        <source srcset="./images/portfolio/6.jpg 1x, ./images/portfolio/web-portfolio-6-2x.jpg 2x"
+                            media="(min-width:1158px)">
+                        <source srcset="./images/portfolio/portfolio-6-tab-1x.jpg 1x, ./images/portfolio/portfolio-6-tab-2x.jpg 2x"
+                            media="(min-width:768px)">
+                        <source srcset="./images/portfolio/mob-portfolio-6-1x.jpg 1x, ./images/portfolio/mob-portfolio-6-2x.jpg 2x"
+                            media="(min-width:320px)">
+                        <img src="./images/portfolio/6.jpg" alt="A girl chatting via phone camera" width="360">
+                    </picture>
+                    
                     <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                         Tracker App ·
                         Exotic
